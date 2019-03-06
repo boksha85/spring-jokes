@@ -12,7 +12,7 @@ public class JokesController {
     @Autowired
     public JokesService jokesService;
 
-    @RequestMapping("/")
+    @RequestMapping({"/",""})
     public String getJoke(Model model){
 
         //property in html file
